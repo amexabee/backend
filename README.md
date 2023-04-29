@@ -138,7 +138,7 @@ If you like this project please give it a star 😁🌟✨
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thanks to all who have helped me in this project.
+- Badge from [Envoy-VC](https://github.com/Envoy-VC/awesome-badges)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

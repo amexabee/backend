@@ -1,14 +1,18 @@
 require('dotenv').config();
 
 const express = require('express');
+const workoutRoutes = require('./routes/workouts');
 
 // express app
 const app = express();
 
-// routes
-app.get('/', (req, res) => {
-  res.json({ mssg: 'Hi' });
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
 });
+
+// routes
+app.use('/api/workouts', workoutRoutes);
 
 // listen for requests
 app.listen(process.env.PORT, () => {

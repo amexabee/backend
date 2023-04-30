@@ -23,7 +23,7 @@ router.delete('/:id', (req, res) => {
 });
 
 // Update a workout
-router.patch('/', (req, res) => {
+router.patch('/:id', (req, res) => {
   res.json({ mssg: 'Update a workout' });
 });
 

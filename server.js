@@ -2,10 +2,12 @@ require('dotenv').config();
 
 const express = require('express');
 const workoutRoutes = require('./routes/workouts');
+const cors = require('cors');
 
 // express app
 const app = express();
 
+app.options('*', cors());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();

@@ -10,7 +10,7 @@ const signupUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const user = User.signup(email, password);
+    const user = await User.signup(email, password);
     res.status(200).json({ email, user });
   } catch (err) {
     res.status(400).json({ error: err.message });
